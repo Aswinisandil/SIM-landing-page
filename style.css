@@ -42,20 +42,23 @@ body {
   align-items: center;
   gap: 5vw;
   width: 80vw;
-  padding: 10vh 0 10vh 0;
+  padding: 0vh 0 5vh 0;
   margin: 0vh auto !important;
 }
 
 .Container-1 .Content {
-  width: 40vw;
-  margin-top: 8vh;
-  margin-bottom: 5vh;
+  width: 80vw;
+  text-align: center;
+  margin-top: 4vh;
+  margin-bottom: 1vh;
+  margin: 4vh 10vw 1vh 10vw;
 }
 
 .Container-1 .Content h3 {
-  font-size: 3.4vw;
-  margin-bottom: 4vh;
+  font-size: 3.3vw;
+  margin-bottom: 1vh;
   line-height: 7vh;
+  width: 70vw;
 }
 
 .Content h3 span {
@@ -63,10 +66,11 @@ body {
 }
 
 .Container-1 .Content p {
-  font-size: 1.5vw;
+  font-size: 1.7vw;
   color: #d6d6d6;
-  width: 35vw;
-  margin-bottom: 5vh;
+  width: 60vw;
+  margin: 0vh 4vw 2vh 4vw;
+  margin-bottom: 0vh;
 }
 
 .Container-1 .Content .content-bottom {
@@ -75,7 +79,26 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 1vw; */
+    width: 40vw;
+    margin: 1vh 13vw;
 }
+
+.content-bottom .rating{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+}
+
+.rating .stars{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5vw;
+}
+
 
 .content-bottom .rating span {
   color: #ffc107;
@@ -85,24 +108,26 @@ body {
 .content-bottom .rating p {
   font-weight: 300;
   font-size: 1.2vw;
+  width: 12vw;
+  margin: 1vh 1vw;
 }
 
 .hero {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
-  width: 35vw;
+  padding: 2vw;
+  width: 65vw;
 }
 
 .video-container {
   width: 40vw;
   border: 1px solid white;
-  border-radius: 1vw;
+  border-radius: 0.5vw;
 }
 
 .video-container iframe {
-  border-radius: 1vw;
+  border-radius: 0.5vw;
   height: 100%;
   width: 100%;
 }
@@ -111,11 +136,16 @@ body {
   display: flex;
   width: 100vw;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  gap: 35vw;
   background-color: #edb72b;
-  padding: 3vh 10vw 3vh 10vw !important;
-  /* position:fixed; */
+  padding: 2vh 10vw 2vh 10vw !important;
+  position:fixed;
+  top: 80vh;
+  margin-top: 9vh;
+  bottom: 0;
+  z-index: 999;
 }
 
 .banner .offer {
@@ -123,12 +153,13 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 1vw;
+  gap: 0.5vw;
 }
 
 .banner .offer p {
   margin-bottom: 0;
   font-size: 1.5vw;
+  font-weight: 800;
 }
 
 .banner .timer {
@@ -144,12 +175,246 @@ body {
   background-color: black;
   padding: 1vw 2vw;
   border-radius: 0.5vw;
-}
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;}
 
 .banner .book p {
   margin-bottom: 0;
   font-size: 1.5vw;
   color: #ffffff;
+}
+
+.numbersContainer{
+  width: 100vw;
+  height: auto;
+  padding-top: 2vh;
+  padding-bottom: 10vh;
+}
+
+.numbersContainer .numbersCards{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+}
+
+.numbersCards .numbersCard{
+  background-image: linear-gradient(to bottom, #3a3a3a , #000000);
+  padding: 0vw;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.numbersCard h1{
+  font-size: 3vw;
+  color: #edb72b;
+  text-align: center;
+  margin-top: -3vh;
+}
+
+.numbersCard p{
+  font-size: 1.15vw;
+  color: #fff;
+  text-align: center;
+  list-style: 2vw;
+
+}
+
+.LearnContainer{
+  background-image: url(./resources/SIM\ what\ bg.avif);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: auto;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.LearnContainer h2{
+  text-align: center;
+  color: #fff;
+  font-size: 3vw;
+  margin-bottom: 8vh;
+  margin-top: 5vh;
+}
+
+.LearnContainer h2 span{
+  color: #edb72b;
+}
+
+.learnCards{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+gap: 5vh 3vw;
+width: 70vw;
+margin: 5vh 15vw;
+}
+
+.learnCards .learnCard{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  color: #fff;
+  width: 30vw;
+  border: 2px solid rgb(71, 71, 71);
+  padding: 4vh 2vw 2vh 2vw;
+  border-radius: 2vw;
+  background-color: #1f1f1f;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.learnCard .learnImage{
+width: 6vw;
+height: 6vw;
+background-color: #edb72b;
+border-radius: 50%;
+padding: 1vw;
+}
+
+.learnCard .learnImage img{
+  width: 100%;
+  height: 100%;
+}
+
+.learnCard h5{
+text-align: center;
+margin-bottom: -0.2vh;
+color: rgb(255, 255, 255);
+}
+
+.learnCard p{
+  text-align: center;
+  color: rgb(208, 202, 202);
+  font-size: 1vw;
+
+}
+
+.learnCards .learnCard1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  color: #fff;
+  width: 30vw;
+  border: 2px solid rgb(71, 71, 71);
+  padding: 5.5vh 2vw 3.5vh 2vw;
+  border-radius: 2vw;
+  background-color: #1f1f1f;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.learnCard1 .learnImage{
+width: 6vw;
+height: 6vw;
+background-color: #edb72b;
+border-radius: 50%;
+padding: 1vw;
+}
+
+.learnCard1 .learnImage img{
+  width: 100%;
+  height: 100%;
+}
+
+.learnCard1 h5{
+text-align: center;
+margin-bottom: -0.2vh;
+color: rgb(255, 255, 255);
+font-size: 1.25vw;
+}
+
+.learnCard1 p{
+  text-align: center;
+  color: rgb(208, 202, 202);
+  font-size: 1vw;
+
+}
+
+.SeoContainer{
+  width: 100vw;
+  height: auto;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  color: white;
+  background-color: black;
+}
+.SeoContainer h3{
+  text-align: center;
+  font-size: 3vw;
+}
+
+.SeoContainer h3 span{
+  color: #edb72b;
+}
+
+.SeoContainer .seopoints{
+  width: 60vw;
+  margin: 8vh 20vw 10vh 20vw;
+  background-color: #292929;
+  padding: 5vh 5vw 3vh 2vw;
+  border-radius: 1.5vw;
+}
+
+.seopoints .point{
+  display: flex;
+  flex-direction: row;
+  justify-content:left;
+  align-items: left;
+  gap: 1vw;
+  margin-bottom: 3vh;
+}
+
+.seopoints .point p{
+  margin-bottom: 0;
+  font-size: 1.3vw;
+  width: 56vw;
+
+}
+
+.seopoints .point p span{
+  color: #edb72b;
+}
+
+.seopoints .tick{
+  width: 2.5vw;
+  height: 2.5vw;
+}
+
+.seopoints .tick img{
+  width: 100%;
+  height: 100%;
+}
+
+.shots{
+  width: 80vw;
+  margin: 5vh 10vw 5vh 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.shots .shot{
+   width: 70vw;
+   margin: 5vh 5vw;
+}
+
+.shots .shot img{
+  width: 100%;
+  height: 100%;
+  border-radius: 1vw;
+
 }
 
 .ResultsContainer {
@@ -252,6 +517,32 @@ body {
   margin-bottom: 0;
 }
 
+.step1 p {
+  text-align: center;
+  color: #000000;
+  background-color: white;
+  margin-bottom: 0;
+  font-size: 1.3vw;
+  padding: 4vh 1vw 2vh;
+  border-radius: 0 0 0.9vw 0.9vw;
+}
+
+.step1 {
+  width: 18vw;
+  color: #ffffff;
+  /* border: 2px solid white; */
+  border-radius: 1vw;
+}
+
+.step1 h4 {
+  text-align: center;
+  background-color: #edb72b;
+  padding: 2vh 2vw;
+  color: #000000;
+  border-radius: 0.9vw 0.9vw 0 0;
+  margin-bottom: 0;
+}
+
 .step p {
   text-align: center;
   color: #000000;
@@ -266,7 +557,7 @@ body {
   background-image: url(./resources/SIM\ founder\ bg.avif);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100vw 100vh;
+  background-size: 100vw 100%;
   width: 100vw;
   height: auto;
   padding-top: 10vh;
@@ -314,6 +605,7 @@ body {
   text-align: center;
   font-size: 0.9vw;
   font-weight: 500;
+  color: #000;
 }
 
 .CardIcon {
@@ -347,6 +639,7 @@ body {
   font-size: 1.5vw;
   font-weight: 600;
   margin-bottom: 3vh;
+  color: #000;
 }
 
 .FounderContent h2 {
@@ -361,6 +654,7 @@ body {
   font-size: 1.5vw;
   text-align: center;
   margin-bottom: 4vh;
+  color: #000;
 }
 
 .newsBanner {
@@ -400,6 +694,7 @@ body {
   text-align: center;
   margin-bottom: 8vh;
   margin-top: 5vh;
+  color: #000;
 }
 
 .clips {
@@ -446,7 +741,13 @@ body {
   color: #ffffff;
   font-size: 3.4vw;
   text-align: center;
-  margin-bottom: 10vh;
+  margin-bottom: 2vh;
+}
+
+.bonusContainer h4{
+  text-align: center;
+  font-size: 2vw;
+  color: #d9d5d5;
 }
 
 .bonusContainer h2 span {
@@ -459,6 +760,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 2vw;
+  margin-top: 10vh;
 }
 
 .bonusContainer .bonusCard {
@@ -468,6 +770,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 17vw;
+  /* height: 35vh; */
   border: 5px solid grey;
   border-radius: 2vw;
 }
@@ -485,6 +788,10 @@ body {
   padding: 1vh 1vw 0.5vh 1vw;
 }
 
+.bonusContainer h4 span{
+ color: #edb72b;
+}
+
 .bonusCard h5 {
   width: 16vw;
   text-align: center;
@@ -493,6 +800,12 @@ body {
 .bonusCard p {
   text-align: center;
   width: 15vw;
+  height: 8vh;
+  align-content: center;
+}
+
+.bonusCard p span{
+  color: #edb72b;
 }
 
 .bonuspic {
@@ -506,7 +819,7 @@ body {
 .bonuspic img {
   width: 100%;
   height: 100%;
-  border: 10px solid grey;
+  border: 5px solid grey;
   border-radius: 50%;
 }
 
@@ -575,6 +888,7 @@ body {
     text-align: center;
     color: white;
     font-weight: 500;
+    text-transform: uppercase;
 }
 
 .successCard h1{
@@ -647,128 +961,12 @@ body {
     font-weight: 600;
 }
 
-.LearnContainer{
-    background-image: url(./resources/SIM\ what\ bg.avif);
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: auto;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-}
-
-.LearnContainer h2{
-    text-align: center;
-    color: #fff;
-    font-size: 3vw;
-    margin-bottom: 8vh;
-    margin-top: 5vh;
-}
-
-.LearnContainer h2 span{
-    color: #edb72b;
-}
-
-.learnCards{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 5vh 3vw;
-  width: 70vw;
-  margin: 5vh 15vw;
-}
-
-.learnCards .learnCard{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1vw;
-    color: #fff;
-    width: 30vw;
-    border: 2px solid rgb(71, 71, 71);
-    padding: 4vh 2vw 2vh 2vw;
-    border-radius: 2vw;
-    background-color: #1f1f1f;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
-}
-
-.learnCard .learnImage{
-  width: 6vw;
-  height: 6vw;
-  background-color: #edb72b;
-  border-radius: 50%;
-  padding: 1vw;
-}
-
-.learnCard .learnImage img{
-    width: 100%;
-    height: 100%;
-}
-
-.learnCard h5{
-  text-align: center;
-  margin-bottom: -0.2vh;
-  color: rgb(208, 202, 202);
-}
-
-.learnCard p{
-    text-align: center;
-    color: rgb(208, 202, 202);
-    font-size: 1vw;
-
-}
-
-.numbersContainer{
-  width: 100vw;
-  height: auto;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
-  border-bottom: 5px solid #edb72b;
-}
-
-.numbersContainer .numbersCards{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 2vw;
-}
-
-.numbersCards .numbersCard{
-  background-image: linear-gradient(to bottom, #3a3a3a , #000000);
-  padding: 1vw;
-  width: 14vw;
-  height: 13vw;
-  border-radius: 1vw;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
-}
-
-.numbersCard h1{
-  font-size: 3.5vw;
-  color: #edb72b;
-  text-align: center;
-  margin-top: 1.5vh;
-}
-
-.numbersCard p{
-  font-size: 1.5vw;
-  color: #fff;
-  text-align: center;
-  list-style: 2vw;
-
-}
-
 .mustHaveContainer{
   width: 100vw;
   height: auto;
   padding-top: 10vh;
   padding-bottom: 10vh;
+  background-color: #fff;
 }
 
 .mustHaveContainer h2{
@@ -805,6 +1003,7 @@ body {
 .mustCard p{
   margin-top: -2vh;
   font-size: 1.5vw;
+  color: #000;
 }
 
 .mustIcon{
@@ -821,18 +1020,21 @@ body {
   height: auto;
   padding-top: 10vh;
   padding-bottom: 10vh;
+  background-color: #232323;
 }
 
 .thinkContainer h2{
   text-align: center;
   font-size: 3vw;
+  color:#fcc029;
 }
 
 .think-flex{
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
+  gap: 3vw;
   width: 80vw;
   margin: 5vh 10vw 0vh 10vw;
 }
@@ -843,9 +1045,15 @@ body {
 
 .think-left p{
   font-size: 1.1vw;
+  color: #fff;
 }
 
 .think-flex .think-left{
+
+  background-color: #464646;
+  padding: 4vh 4vw 4vh 2vw;
+  border-radius: 1vw;
+  margin-top: 5vh;
 
 }
 
@@ -866,6 +1074,38 @@ body {
 
 .remaining p{
   font-size: 1.1vw;
+}
+
+.certificateContainer{
+  width: 100vw;
+  height: auto;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  background-color: #292929;
+}
+
+.certificateContainer h3{
+  text-align: center;
+  color:#edb72b;
+  font-size: 3.5vw;
+  margin-bottom: 2vh;
+}
+
+.certificateContainer h5{
+  text-align: center;
+  color: #fff;
+  font-size: 1.5vw;
+
+}
+
+.certificateContainer .certificate{
+  width: 50vw;
+  margin: 5vh 25vw;
+}
+
+.certificateContainer .certificate img{
+  width: 100%;
+  height: 100%;
 }
 
 .faqcontent {
@@ -892,8 +1132,8 @@ body {
 }
 .faq{
     margin-bottom: 1rem;
-    width: 80%;
-    margin: 5vh 10vw 0vh 10vw;
+    width: 70%;
+    margin: 2vh 15vw 0vh 15vw;
 }
 
 .faqheader{
@@ -937,7 +1177,7 @@ footer {
   gap: 8vw;
   align-items: center;
   flex-direction: row;
-  padding: 2em 4em 2em 4em !important;
+  padding: 2em 4em 8em 4em !important;
   bottom: 0 !important;
 }
 
@@ -1010,17 +1250,19 @@ footer {
 }
 
 .section-1 .adv .arrow-icon {
-  padding: 0vw 2vw;
+  padding: 0vw 2.7vw;
   background-color: #edb72b;
   color: #000000;
-  font-size: 4vw;
+  font-size: 5vw;
   border-radius: 0.2vw;
 }
 
 .section-1 .adv p {
   margin-bottom: 0;
   color: #ffffff;
-  font-size: 3.5vw;
+  font-size: 4vw;
+  text-align: center;
+  line-height: 5vw;
 }
 
 .Container-1 {
@@ -1030,7 +1272,7 @@ footer {
   align-items: center;
   gap: 1vw;
   width: 90vw;
-  padding: 3vh 0 3vh 0;
+  padding: 3vh 0 1vh 0;
   margin: 0vh auto !important;
 }
 
@@ -1041,9 +1283,12 @@ footer {
 }
 
 .Container-1 .Content h3 {
-  font-size: 11vw;
+  font-size: 8.5vw;
   margin-bottom: 3vh;
-  line-height: 5.8vh;
+  line-height: 11vw;
+  text-align: left;
+  width: 90vw;
+  letter-spacing: 1px;
 }
 
 .Content h3 span {
@@ -1051,10 +1296,12 @@ footer {
 }
 
 .Container-1 .Content p {
-  font-size: 6vw;
+  font-size: 5.5vw;
   color: #d6d6d6;
   width: 90vw;
   margin-bottom: 2vh;
+  margin: 1vh 5vw 2vh 1vw;
+  text-align: left;
 }
 
 .Container-1 .Content .content-bottom {
@@ -1066,6 +1313,11 @@ footer {
     margin-top: 3vh;
 }
 
+.content-bottom .rating{
+  width: 80vw;
+  margin-left: -3vw;
+}
+
 .content-bottom .rating span {
   color: #ffc107;
   font-size: 6vw;
@@ -1074,13 +1326,14 @@ footer {
 .content-bottom .rating p {
   font-weight: 300;
   font-size: 4.2vw;
+  margin-bottom: 0.7vh;
 }
 
 .hero {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
+  padding: 2vh 2vw 1vh 2vw;
   width: 90vw;
 }
 
@@ -1103,8 +1356,10 @@ footer {
   justify-content: space-around;
   align-items: center;
   background-color: #edb72b;
-  padding: 2vh 5vw 2vh 5vw !important;
-  /* position:fixed; */
+  padding: 1vh 2vw 1vh 2vw !important;
+  margin-top: 12vh;
+  position:fixed;
+  gap: 0;
 }
 
 .banner .offer {
@@ -1117,8 +1372,16 @@ footer {
 
 .banner .offer p {
   margin-bottom: 0;
-  font-size: 3vw;
+  font-size: 3.5vw;
   font-weight: 600;
+  width: 35vw;
+}
+
+.banner .offer #timer{
+  margin-bottom: 0;
+  font-size: 3.5vw;
+  font-weight: 600;
+  width: 20vw;
 }
 
 .banner .timer {
@@ -1132,7 +1395,7 @@ footer {
 
 .banner .book {
   background-color: black;
-  padding: 1vh 4vw;
+  padding: 1vh 2vw;
   border-radius: 1vw;
 }
 
@@ -1140,6 +1403,239 @@ footer {
   margin-bottom: 0;
   font-size: 3vw;
   color: #ffffff;
+}
+
+.numbersContainer{
+  width: 100vw;
+  height: auto;
+  padding-top: 1vh;
+  padding-bottom: 5vh;
+  /* border-bottom: 3px solid #edb72b; */
+}
+
+.numbersContainer .numbersCards{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4vw;
+  flex-wrap: wrap;
+  flex-basis: 50%;
+  width: 90vw;
+  margin: 2vh 5vw;
+}
+
+.numbersCards .numbersCard{
+  background-image: linear-gradient(to bottom, #3a3a3a , #000000);
+  padding: 1vw;
+  width: 35vw;
+  height: 35vw;
+  border-radius: 1vw;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
+
+.numbersCard h1{
+  font-size: 7vw;
+  color: #edb72b;
+  text-align: center;
+  margin-top: 1.5vh;
+}
+
+.numbersCard p{
+  font-size: 3.5vw;
+  line-height: 4.5vw;
+  color: #fff;
+  text-align: center;
+  list-style: 2vw;
+  width: 30vw;
+
+}
+
+.LearnContainer{
+  background-image: url(./resources/SIM\ learn\ bg\ mbl.avif);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: auto;
+  padding-top: 5vh;
+  padding-bottom: 10vh;
+}
+
+.LearnContainer h2{
+  text-align: center;
+  color: #fff;
+  font-size: 7vw;
+  margin-bottom: 8vh;
+  margin-top: 3vh;
+}
+
+.LearnContainer h2 span{
+  color: #edb72b;
+}
+
+.learnCards{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+gap: 5vh;
+width: 90vw;
+margin: 1vh 5vw;
+}
+
+.learnCards .learnCard{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  color: #fff;
+  width: 70vw;
+  border: 3px solid rgb(71, 71, 71);
+  padding: 3vh 4vw 2vh 4vw;
+  border-radius: 4vw;
+  background-color: #1f1f1f;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.learnCard .learnImage{
+width: 15vw;
+height: 15vw;
+background-color: #edb72b;
+border-radius: 50%;
+padding: 1vw;
+}
+
+.learnCard .learnImage img{
+  width: 100%;
+  height: 100%;
+}
+
+.learnCard h5{
+text-align: center;
+margin-bottom: 1vh;
+color: rgb(208, 202, 202);
+font-size: 5vw;
+margin-top: 1vh;
+}
+
+.learnCard p{
+  text-align: center;
+  color: rgb(208, 202, 202);
+  font-size: 3.3vw;
+
+}
+
+.learnCards .learnCard1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  color: #fff;
+  width: 70vw;
+  border: 3px solid rgb(71, 71, 71);
+  padding: 3vh 4vw 2vh 4vw;
+  border-radius: 4vw;
+  background-color: #1f1f1f;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.learnCard1 .learnImage{
+  width: 15vw;
+  height: 15vw;
+  background-color: #edb72b;
+  border-radius: 50%;
+  padding: 1vw;
+}
+
+.learnCard1 .learnImage img{
+  width: 100%;
+  height: 100%;
+}
+
+.learnCard1 h5{
+  text-align: center;
+  margin-bottom: 1vh;
+  color: rgb(208, 202, 202);
+  font-size: 5vw;
+  margin-top: 1vh;
+}
+
+.learnCard1 p{
+  text-align: center;
+  color: rgb(208, 202, 202);
+  font-size: 3.3vw;
+
+}
+
+.SeoContainer{
+  width: 100vw;
+  height: auto;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  color: white;
+  background-color: black;
+}
+.SeoContainer h3{
+  text-align: center;
+  font-size: 8vw;
+}
+
+.SeoContainer .seopoints{
+  width: 80vw;
+  margin: 5vh 10vw 3vh 10vw;
+  background-color: #292929;
+  padding: 3vh 2vw 1vh 1vw;
+  border-radius: 3vw;
+}
+
+.seopoints .point{
+  display: flex;
+  flex-direction: row;
+  justify-content:left;
+  /* align-items: left; */
+  gap: 0vw;
+  margin-bottom: 3vh;
+}
+
+.seopoints .point p{
+  margin-bottom: 0;
+  font-size: 3.4vw;
+}
+
+.seopoints .tick{
+  width: 12vw;
+}
+
+.seopoints .tick img{
+  width: 100%;
+  height: 100%;
+}
+
+.shots{
+  width: 90vw;
+  margin: 5vh 5vw 5vh 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.shots .shot{
+   width: 85vw;
+   margin: 5vh 5vw 1vh 5vw;
+}
+
+.shots .shot img{
+  width: 100%;
+  height: 100%;
+  border-radius: 1vw;
+
 }
 
 .ResultsContainer {
@@ -1242,6 +1738,7 @@ footer {
   margin-bottom: 0;
 }
 
+
 .step p {
   text-align: center;
   color: #000000;
@@ -1250,6 +1747,32 @@ footer {
   font-size: 3.5vw;
   padding: 2vh 2vw;
   border-radius: 0 0 0.9vw 0.9vw;
+}
+
+.step1 p {
+  text-align: center;
+  color: #000000;
+  background-color: white;
+  margin-bottom: 0;
+  font-size: 3.5vw;
+  padding: 2vh 2vw;
+  border-radius: 0 0 0.9vw 0.9vw;
+}
+
+.step1 {
+  width: 40vw;
+  color: #ffffff;
+  /* border: 2px solid white; */
+  border-radius: 1vw;
+}
+
+.step1 h4 {
+  text-align: center;
+  background-color: #edb72b;
+  padding: 2vh 2vw;
+  color: #000000;
+  border-radius: 0.9vw 0.9vw 0 0;
+  margin-bottom: 0;
 }
 
 .FounderSectionMobile {
@@ -1430,14 +1953,26 @@ footer {
   height: auto;
   background-color: #1f1f1f;
   padding-top: 10vh;
-  padding-bottom: 20vh;
+  padding-bottom: 15vh;
 }
 
 .bonusContainer h2 {
   color: #ffffff;
+  width: 80vw;
+  margin: 0̀vh 10vw 2vh 10vw;
   font-size: 7vw;
   text-align: center;
-  margin-bottom: 10vh;
+  margin-bottom: 2vh;
+}
+
+.bonusContainer h4{
+  text-align: center;
+  font-size: 5vw;
+  color: #d9d5d5;
+}
+
+.bonusContainer h2 span {
+  color: #edb72b;
 }
 
 .bonusContainer h2 span {
@@ -1450,6 +1985,7 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 15vh;
+  margin-top: 10vh;
 }
 
 .bonusContainer .bonusCard {
@@ -1458,10 +1994,10 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80vw;
-  border: 5px solid grey;
+  width: 75vw;
+  border: 3px solid grey;
   border-radius: 5vw;
-  padding-bottom: 5vh;
+  padding-bottom: 0.5vh;
 }
 
 .bonusCard .bonusHead {
@@ -1483,22 +2019,23 @@ footer {
 .bonusCard h5 {
   width: 70vw;
   text-align: center;
-  font-size: 5.7vw;
+  font-size: 6vw;
   font-weight: 600;
 }
 
 .bonusCard p {
   text-align: center;
-  width: 75vw;
+  width: 70vw;
   font-size: 4.5vw;
+  color: #bababa;
 
 }
 
 .bonuspic {
-  width: 30vw;
-  height: 30vw;
+  width: 32vw;
+  height: 32vw;
   margin-top: 2vh;
-  margin-bottom: -12vh;
+  margin-bottom: -9vh;
   background-color: #1f1f1f;
 }
 
@@ -1512,7 +2049,7 @@ footer {
 .successContainer {
   width: 100vw;
   height: auto;
-  padding-top: 10vh;
+  padding-top: 5vh;
   padding-bottom: 10vh;
 }
 
@@ -1548,7 +2085,7 @@ footer {
   animation: slide 20s linear infinite;
   display: flex;
   flex-direction: row;
-  gap: 6vw;
+  gap: 10vw;
   justify-content: center;
   padding-top: 5vh;
 }
@@ -1557,7 +2094,7 @@ footer {
   border: 2px solid grey;
   background-color: #434242;
   padding: 1vh 8vw;
-  border-radius: 1.3vw;
+  border-radius: 2.5vw;
 }
 
 .successCard .student{
@@ -1607,10 +2144,10 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 4vh 4vw;
+  gap: 3vh 4vw;
   flex-wrap: wrap;
   width: 90vw;
-  margin: 2vh 5vw;
+  margin: 4vh 5vw 2vh 5vw;
   color: #ffffff;
 }
 
@@ -1646,128 +2183,7 @@ footer {
     font-weight: 600;
 }
 
-.LearnContainer{
-    background-image: url(./resources/SIM\ learn\ bg\ mbl.avif);
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: auto;
-    padding-top: 5vh;
-    padding-bottom: 10vh;
-}
 
-.LearnContainer h2{
-    text-align: center;
-    color: #fff;
-    font-size: 7vw;
-    margin-bottom: 8vh;
-    margin-top: 5vh;
-}
-
-.LearnContainer h2 span{
-    color: #edb72b;
-}
-
-.learnCards{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 5vh 3vw;
-  width: 90vw;
-  margin: 5vh 5vw;
-}
-
-.learnCards .learnCard{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1vw;
-    color: #fff;
-    width: 70vw;
-    border: 2px solid rgb(71, 71, 71);
-    padding: 3vh 4vw 2vh 4vw;
-    border-radius: 2vw;
-    background-color: #1f1f1f;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
-}
-
-.learnCard .learnImage{
-  width: 15vw;
-  height: 15vw;
-  background-color: #edb72b;
-  border-radius: 50%;
-  padding: 1vw;
-}
-
-.learnCard .learnImage img{
-    width: 100%;
-    height: 100%;
-}
-
-.learnCard h5{
-  text-align: center;
-  margin-bottom: 1vh;
-  color: rgb(208, 202, 202);
-  font-size: 5vw;
-  margin-top: 1vh;
-}
-
-.learnCard p{
-    text-align: center;
-    color: rgb(208, 202, 202);
-    font-size: 3vw;
-
-}
-
-.numbersContainer{
-  width: 100vw;
-  height: auto;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
-  border-bottom: 3px solid #edb72b;
-}
-
-.numbersContainer .numbersCards{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 4vw;
-  flex-wrap: wrap;
-  flex-basis: 50%;
-  width: 80vw;
-  margin: 2vh 10vw;
-}
-
-.numbersCards .numbersCard{
-  background-image: linear-gradient(to bottom, #3a3a3a , #000000);
-  padding: 1vw;
-  width: 25vw;
-  height: 25vw;
-  border-radius: 1vw;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
-}
-
-.numbersCard h1{
-  font-size: 5vw;
-  color: #edb72b;
-  text-align: center;
-  margin-top: 1.5vh;
-}
-
-.numbersCard p{
-  font-size: 2.5vw;
-  color: #fff;
-  text-align: center;
-  list-style: 2vw;
-
-}
 
 .mustHaveContainer{
   width: 100vw;
@@ -1805,19 +2221,19 @@ footer {
   justify-content: center;
   align-items: center;
   border: 2px solid transparent;
-  width: 25vw;
-  height: 25vw;
+  width: 30vw;
+  height: 30vw;
   border-radius: 1vw;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .mustCard p{
   margin-top: 0.1vh;
-  font-size: 3.5vw;
+  font-size: 4vw;
 }
 
 .mustIcon{
-  width: 14vw;
+  width: 20vw;
 }
 
 .mustIcon img{
@@ -1851,11 +2267,14 @@ footer {
 }
 
 .think-left p{
-  font-size: 3vw;
+  font-size: 3.5vw;
 }
 
 .think-flex .think-left{
-
+  background-color: #464646;
+  padding: 4vh 4vw 4vh 5vw;
+  border-radius: 3vw;
+  margin-top: 5vh;
 }
 
 .thinking{
@@ -1876,6 +2295,39 @@ footer {
 .remaining p{
   font-size: 3vw;
 }
+
+.certificateContainer{
+  width: 100vw;
+  height: auto;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  background-color: #292929;
+}
+
+.certificateContainer h3{
+  text-align: center;
+  color:#edb72b;
+  font-size: 7vw;
+  margin-bottom: 2vh;
+}
+
+.certificateContainer h5{
+  text-align: center;
+  color: #fff;
+  font-size: 3.5vw;
+
+}
+
+.certificateContainer .certificate{
+  width: 80vw;
+  margin: 5vh 10vw;
+}
+
+.certificateContainer .certificate img{
+  width: 100%;
+  height: 100%;
+}
+
 
 .faqcontent {
   display: none;
@@ -1912,6 +2364,7 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 1rem;
+    border: 2px solid #848181;
     border-radius: 2vw;
 }
 
@@ -1934,6 +2387,7 @@ footer {
     background-color: #252525;
     border: 2px solid #3a3a3a;
     border-radius: 0 0 2vw 2vw;
+    margin-top: -0.5vh;
   
 }
 
@@ -1948,7 +2402,7 @@ footer {
   gap: 0vw;
   align-items: center;
   flex-direction: row;
-  padding: 4vw !important;
+  padding: 4vw 4vw 10vh 4vw!important;
   bottom: 0 !important;
 }
 
